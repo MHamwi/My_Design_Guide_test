@@ -1,0 +1,430 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+   
+  }
+  @font-face {
+    font-family: 'Baloo Paaji 2';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Baloo Paaji 2 Bold'), local('BalooPaaji2-Bold'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dRIFFzbz-QHZUdV9_UGWZuWO6_CwO0ag.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Baloo Paaji 2';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Baloo Paaji 2 SemiBold'), local('BalooPaaji2-SemiBold'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dRIFFzbz-QHZUdV9_UGWZuWIq-CwO0ag.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Comic Neue Light'), local('ComicNeue-Light'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaErEJDsxBrF37olUeD_wHL8pxULg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Comic Neue Regular'), local('ComicNeue-Regular'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaHrEJDsxBrF37olUeD96rp5w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Comic Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Comic Neue Bold'), local('ComicNeue-Bold'), url(https://fonts.gstatic.com/s/comicneue/v1/4UaErEJDsxBrF37olUeD_xHM8pxULg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Baloo Paaji 2';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Baloo Paaji 2 ExtraBold'), local('BalooPaaji2-ExtraBold'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dRIFFzbz-QHZUdV9_UGWZuWPK8CwO0ag.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Baloo Paaji 2';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Baloo Paaji 2 Regular'), local('BalooPaaji2-Regular'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dMIFFzbz-QHZUdV9_UGWZuUFWaHg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Baloo Paaji 2';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Baloo Paaji 2 Medium'), local('BalooPaaji2-Medium'), url(https://fonts.gstatic.com/s/baloopaaji2/v1/i7dRIFFzbz-QHZUdV9_UGWZuWKa5CwO0ag.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPAA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+ p, h1,h2,h3{
+    font-family: "Baloo Paaji",Arial,serif;
+    color:#333366;
+  }
+ .Banner{
+background-image: url("../starting/resources/images/1.png");
+overflow: hidden;
+background-size: cover;
+height:700px;
+width:100%;
+min-width: 860px;
+
+}
+.Banner h1{
+border:3px solid #cc3333;
+text-align:center;
+position: relative;
+top:500px;
+font-size:85px;
+font-family: "Baloo Paaji",Arial,serif;
+font-weight:500;
+width: fit-content;
+margin: 0 auto;
+color:#333366;
+line-height:100px ;
+min-width: 518px;
+}
+nav{
+text-align: center;
+position: fixed;
+width: 100%;
+background-image: url("../starting/resources/images/2.png");
+background-size: cover;
+z-index:10;
+width:100%;
+}
+a{
+    text-decoration: none;
+}
+p,li{
+    color:#333366;
+
+}
+nav ul li{
+    display:inline-block;
+    margin:0 25px;
+    font-size: 25px;   
+    font-family:"Baloo Paaji",Arial,serif; ; 
+    border:3px dotted white;
+    background-color: wheat;
+    opacity: 0.8;
+    color:#333366;
+}
+.item1 {
+    float:left;
+    padding:0 100px;
+}
+.item3{
+    float:right;
+    padding:0 100px;
+}
+body{
+    background-color:rgb(233,231,234);
+}
+.text_style,.t,.sh{
+    margin: 0 auto;
+    padding-top: 50px;
+    border-top: 5px dotted white;
+    text-align: center;
+}
+
+.sh h2,.t h2,#colors{
+    margin:50px auto;
+    text-transform: uppercase;
+    color:#333366;
+    font-size:50px;
+    line-height: 65px;
+}
+h3{
+    margin:50px auto; 
+    text-transform: capitalize;
+    text-align: center;
+}
+img{
+    padding-bottom: 10px;
+    
+}
+.image_container{
+    width:530px;
+    height: 495px;
+    border: 1px solid white;
+    margin: 0 auto;
+    padding-top:5px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.cover{
+    width:500px;
+    height: 450px;
+    overflow: hidden;
+    margin: 0  auto;
+    border: 10px solid white;
+    border-radius: 15px;
+}
+p{
+    
+    max-width:720px;
+    min-width:100px;
+    margin:0 auto;
+    line-height: 1.2;
+    padding-bottom: 35px;
+}
+.ired,.igreen,.iyellow, .iblue{
+    font-weight: 500;
+    font-size:50px;
+    display: block;
+    float: left;
+    padding-right:19.6px ;
+    line-height: 1.2;
+}
+.gr1,.gr2,.gr3,.gr4{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: row wrap;
+    width: fit-content;
+    margin:0 auto;
+}
+.r1, .r2, .r3,.r4,.g1, .g2, .g3,.g4,.y1,.y2,.y3,.y4,.b1,.b2,.b3,.b4{
+    border:7px solid gainsboro;
+    width:100px;
+    height:100px;
+    text-align:center;
+}
+
+.ired{
+    color:red;
+}
+
+.red{
+    color:red;
+    font-weight: 800;
+}
+
+.r1{
+    background-color:#ff3366;
+}
+.r2{
+    background-color: #cc3333;
+}
+.r3{
+    background-color: #663333;
+}
+.r4{
+    background-color: #ff6699;
+}
+.igreen{
+  color:green
+}
+
+.green{
+    color:green;
+    font-weight: 800;
+}
+.g1{
+    background-color: #669933;
+}
+.g2{
+    background-color: #339933;
+}
+.g3{
+    background-color: #339999;
+}
+.g4{
+    background-color: #009999;
+}
+.iyellow{
+    color:yellow;
+}
+.yellow{
+    color:yellow;
+    font-weight:800;
+}
+.y1{
+    background-color: #ffff99;
+}
+.y2{
+    background-color: #ffff66;
+}
+.y3{
+    background-color: #ffff33;
+}
+.y4{
+    background-color: #ffff00;
+}
+.Blue{
+    color:blue;
+    font-weight: 800;
+}
+.iblue{
+ color:blue
+}
+.b1{
+    background-color:#00ffff ;
+}
+.b2{
+    background-color:#00ccff ;
+}
+.b3{
+    background-color:#3366ff ;
+}
+.b4{
+    background-color:#000099 ;
+}
+h4{
+    
+    line-height: 5;
+}
+table {
+    text-align: center;
+    margin: 20px auto;
+    border:7px dotted white;
+    border-collapse:collapse;
+    border-spacing: 0;
+    max-width: 940px;
+    margin: 0 auto;
+    height: 800px;
+    
+}
+tr{
+    border:7px dotted white;
+    border-radius: 2%;
+}
+td{
+    width:300px;
+    border:7px dotted white;
+    border-radius: 2%;
+    
+    border-image-slice: 100%;
+
+}
+
+thead{
+    width:100%
+    
+}
+thead h3{
+    float: left;
+   margin-left:10%;
+
+}
+.left {
+    width: 150px;
+    border-collapse: collapse;
+  }
+.left h3.babloo{
+ font-family: "Baloo Paaji 2";
+ font-weight: 400;
+}
+.baloo_w h3.w1{
+    font-family: "Baloo Paaji 2";
+    font-weight: 400;
+}
+.baloo_w h3.w2{
+    font-family: "Baloo Paaji 2";
+    font-weight: 600;
+}
+.baloo_w h3.w3{
+    font-family: "Baloo Paaji 2";
+    font-weight: 800;
+}
+.left h3.raleway{
+    font-family: Raleway;
+    font-weight: 400;
+   }
+.ralw h3.w1{
+    font-family: raleway;
+    font-weight: 400;
+
+}
+.ralw h3.w2{
+    font-family: raleway;
+    font-weight: 500;
+}
+.ralw h3.w3{
+    font-family: raleway;
+    font-weight: 700;
+}
+.left h3.comic{
+    font-family: "Comic Neue";
+    font-weight: 300;
+}
+.comicw h3.w1{
+    font-family: "Comic Neue";
+    font-weight: 300; 
+}
+.comicw h3.w2{
+    font-family: "Comic Neue";
+    font-weight: 400; 
+}
+.comicw h3.w3{
+    font-family: "Comic Neue";
+    font-weight: 700; 
+}
+.text_style,.t{
+ margin-top: 35px;
+}
+.text_style p{
+display: inline;}
+#style{
+    margin:50px auto;
+    text-transform: uppercase;
+    color:#333366;
+    font-size:50px;
+    line-height: 65px;
+}
+
+
+.H1,.H2,.P{
+    display:inline-block;
+    text-align: center;
+    font-size: 95%;
+    height:100px;
+    width:400px;
+    margin:20px 10px;
+    border-left: 3px solid white;
+
+}
+
+.text_style ul{
+    list-style-type: none;
+
+}
+.text_style li{
+    font-family: raleway;
+}
+li{
+    text-decoration: none;
+}
+#straw p, #limes p, #banana p, #stone p{
+ text-align: center;
+ font-family: raleway;
+}
+#cr,#cg,#cy,#cb{
+    color:#333366;}
