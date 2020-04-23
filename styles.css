@@ -86,7 +86,7 @@
     color:#333366;
   }
  .Banner{
-background-image: url("../My\ design\ guide//resources/images/1.png");
+background-image: url("../My\ design\ guide/resources/images/1.png");
 overflow: hidden;
 background-size: cover;
 height:700px;
@@ -112,7 +112,7 @@ nav{
 text-align: center;
 position: fixed;
 width: 100%;
-background-image: url("../starting/resources/images/2.png");
+background-image: url("../My\ design\ guide/resources/images/2.png");
 background-size: cover;
 z-index:10;
 width:100%;
